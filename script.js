@@ -76,6 +76,9 @@ function checkWinner() {
 
     if (!options.includes("")) {
         statusText.textContent = `Draw Game`;
+        setTimeout(()=>{
+                alert("Draw Game")
+            },120)
         running = false;
         return;
     }
