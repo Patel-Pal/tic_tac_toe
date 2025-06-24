@@ -20,7 +20,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 95vw;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 h1 {
@@ -43,7 +43,7 @@ h1 {
   font-size: 12vw;
   height: 30vw;
   max-height: 120px;
- 
+
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -80,6 +80,21 @@ h1 {
 
 /* Medium screen adjustments */
 @media (min-width: 600px) {
+  .cell {
+    font-size: 6vw;
+    height: 10vw;
+  }
+
+  #statusText {
+    font-size: 1.5rem;
+  }
+
+  #restart {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 375px) {
   .cell {
     font-size: 6vw;
     height: 10vw;
