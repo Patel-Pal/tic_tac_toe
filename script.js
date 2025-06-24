@@ -65,7 +65,10 @@ function checkWinner() {
         const [a, b, c] = winConditions[i];
         if (options[a] && options[a] === options[b] && options[a] === options[c]) {
             statusText.textContent = `${currentPlayer} wins `;
-            alert("Congration 🎉 "+currentPlayer+" Wins")
+            setTimeout(()=>{
+                alert("Congration 🎉 "+currentPlayer+" Wins")
+            },120)
+            
             running = false;
             return;
         }
